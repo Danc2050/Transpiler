@@ -1,0 +1,26 @@
+Construct: For loop
+----------
+Abstraction: {increment}for {var} {duration} {var/value} {body}
+-----------
+Example: 2for i until 10 print(i)
+-------
+Translations:
+------------
+-C++:
+
+for(int i = 0; i < 10; i+=2){
+        cout <<i<<endl;
+
+-C:
+for(int i = 0; i < 10; i+=2){
+        print(i);
+
+-Python:
+for i in range(0, 10, 2):
+        print(i);
+
+-Java:
+for (int i = 0; i < 10; i+=2){
+        System.out.println(i);
+}
+
