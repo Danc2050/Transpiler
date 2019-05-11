@@ -1,0 +1,10 @@
+Why make a multi-transpiler?
+---------------------------
+Note: When referring to a "multi-transpiler", we are saying mathematically f(src_1) -> f(src_2, src_3, ... src_n). 
+
+(*) A multi-transpiler:
+    - Shortens syntax written by a programmer (to one, shortened, language).
+    - Makes clearer syntax (e.g., "for i until 10" implies exclusivity).
+    - Saves $ for companies who need to teach employees new languages -- they teach one, not four.
+    - Save time. By abstracting four languages into one, we can save time.
+    - Make better programs. Through abstraction, we can focus more on the non-abstractable. The flow of the program and what it does...not the syntax.

@@ -1,0 +1,4 @@
+Is a transpiler possible?
+-------------------------
+
+(*) It remains to be seen. Let's try and find out.
