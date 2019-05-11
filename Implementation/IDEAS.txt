@@ -1,0 +1,17 @@
+Implement/think over the following ideas:
+
+# Idea 1.
+
+Store fully-implemented actions in dictionary. Use actions in dictionary to implement functions/code.
+e.g., dict[traverse] = implementation of code    OR     store implementations in libraries. e.g., traverse.cpp contains implementation for traversing a LLL.
+
+at int traverse(LLL), write traverse.cpp in the body.  (i.e., int traverse(LLL) gets dict[traverse])
+
+# Idea 2
+Abstract away the need to include common libraries unless specifically you want to. For example, if a keyword named COMPARE is used for string1 and string2, we should automatically write to the file #include <string.h>
+
+# Idea 3
+Create a command line version for small-scale translations.
+
+# Idea 4
+Create a plugn that supports a 'lite' version of this idea. Mainly, allow an IDE to write the syntax, and then after some cue (e.g., a newline), the code will be refactored, in place, to whatever language is indicated by the extension (e.g., .py will create a for loop of .py type).
