@@ -3,8 +3,9 @@ How will you implement this?
 
 (*) The implementation details will be finalized upon covering 90-100% of the translations from languages.
     The reason is to uncomplicate the process. If I were to mix translation, with implentation, I foresee
-    potential problems arising. Depending on how I end up translating, implementation may change. Therefore,
-    I want to separate the process and be sure of the translation before I end up building the implementation.
+    potential problems arising. Depending on how I end up translating, implementation may change and I will
+    have to undo a body of work. Therefore, I want to separate the process and be sure of the translation 
+    before I end up building the implementation.
     
     However, I still have some ideas for translation. For example:
     - Tokenizers with Abstract Syntax Tree (AST): We may tokenize a file and send tokens through an AST. In fact,
