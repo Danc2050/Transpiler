@@ -1,0 +1,44 @@
+Construct: if/else
+----------
+Abstraction: if [var/value] [condition] [var/value] [body] [elif/else x N] [body]
+-----------
+Example: if a < 10 print("False") otherwise print("True")
+-------
+Translations:
+-C++:
+
+if (a < 10) {
+	cout <<"False"<<endl;
+}
+
+else {
+	cout <<"True"<<end
+}
+
+-C:
+
+if (a < 10) {
+	printf("False");
+}
+
+else {
+	printf("True");
+}
+
+-Python:
+
+if a < 10:
+	print("False")
+else:
+	print("True")
+
+-Java:
+if(a < 10) {
+	System.out.println("False");
+}
+
+else {
+	System.out.println("False");
+}
+------------
+
