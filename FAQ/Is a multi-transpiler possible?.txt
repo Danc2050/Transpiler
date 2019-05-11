@@ -1,4 +1,4 @@
-Is a transpiler possible?
+Is a multi-transpiler possible?
 -------------------------
 
 (*) It remains to be seen. Let's try and find out.
