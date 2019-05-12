@@ -1,0 +1,9 @@
+Data Structures
+---------------
+
+Types to Support:
+----------------
+Queues (Fifo, Lifo, Priority)
+Linked Lists (Single, Doubly, Circular)
+Scalar (Vectors, ...?)
+Other standard library functions (e.g., structs...).
