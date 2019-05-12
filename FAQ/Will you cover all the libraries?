@@ -1,0 +1,7 @@
+Will you cover all the libraries?
+---------------------------------
+
+(*) Making translations for all the libraries and their functions would be infeasible. However,
+    the main libraries should be implemented such as basic string functions and data structures.
+    This list may grow to casting operations, but as of now the projects scope is limited until
+    more potential is seen and/or interest is generated.
