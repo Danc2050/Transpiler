@@ -15,3 +15,9 @@ Create a command line version for small-scale translations.
 
 # Idea 4
 Create a plugn that supports a 'lite' version of this idea. Mainly, allow an IDE to write the syntax, and then after some cue (e.g., a newline), the code will be refactored, in place, to whatever language is indicated by the extension (e.g., .py will create a for loop of .py type).
+
+# Idea 5
+If You can go from f(src1) --> f(src_2, src_3,... src_n), then you can also do the inverse  -- f(src_2, src_3, ... src_n) -->f(src_1). So, there may be a potential for taking Java code and outputting Python code.
+
+# Idea 6
+Debugging will be an issue. When we take a f(src_1) --> f(src_n) and that src_n is compiled/interpreted with bugs, how will the programmer know what went wrong if they only know the src_1 language (HLOA)? I think that in order to make this successful, we would need a debugging component in the compiler.
