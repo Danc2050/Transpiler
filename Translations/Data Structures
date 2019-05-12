@@ -7,3 +7,21 @@ Queues (Fifo, Lifo, Priority)
 Linked Lists (Single, Doubly, Circular)
 Scalar (Vectors, ...?)
 Other standard library functions (e.g., structs...).
+
+Example Translations (TODO):
+----------------------------
+-queues
+Python: queue   =>    q.Queue() 
+C++:    queue   =>    
+C:      queue   =>    
+Java:   queue   =>    
+
+Python: pqueue(args)   =>    q.PriorityQueue(args)  *args is optional
+C++:    pqueue(args)   =>    
+C:      pqueue(args)   =>    
+Java:   pqueue(args)   =>    
+
+Python: queue.push(arg)   =>    q.put(arg)
+C++:    queue.push(arg)   =>    
+C:      queue.push(arg)   =>    
+Java:   queue.push(arg)   =>    
