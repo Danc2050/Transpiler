@@ -24,6 +24,11 @@ for (int i = 0; i < 10; i+=2){
         System.out.println(i);
 }
 
-Special Cases:
+Special Cases/Implementation details:
 -------------
-*Must account for counting down for loops. Possible syntax (i.e., "decrement).
+*Must account for counting down for loops. Possible syntax (i.e., "decrement). 
+  - The decrement version of the Example would be: -2for i until 10 print(i)
+  - A Pythonic translation would be:
+      for i in range(10, 0, -2):
+        print(i)
+  - You must implement all cases.
