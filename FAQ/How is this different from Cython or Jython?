@@ -1,0 +1,5 @@
+How is this different from Cython or Jython?
+--------------------------------------------
+
+(*) Cython and Jython both compile down to bytecode. The implementation of this project is disparate from this idea in that it
+    is a source-source translation.
