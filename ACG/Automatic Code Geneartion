@@ -1,0 +1,54 @@
+Design:
+- Keywords: tokenized words -- always in CAPS
+- Objects: tokenized nouns -- always in CAPS ???
+- methods: tokenized verbs
+- data: implied by 
+
+Example1:
+{User Input}: ./a.out IN bicycle.cpp CREATE BICYCLE SHOULD journey yield brake . WITH tires gears pedals .
+
+In road.CPP I WANT a ROAD. A ROAD will have conditions(s), traffic(n), and signs(s).
+
+BICYCLE INTERACTS WITH ROAD  [Declares friend, or 
+
+
+{code output}:
+
+class BICYCLE{
+        public:
+                int BICYCLE();
+                int ~BICYCLE():
+		int journey();
+		int yield();
+		int brake();
+        private:
+		int tires();
+		int gears();
+		int pedals();
+}
+
+Argument:
+We learn to program, however, no matter our adeptness at programming, speaking in our natural language is always faster and more precise. With this assumption, I have created an automatic code generation (ACG) program to automatically generate code based on learning a new syntactical construct, that is mroe closely related to English. This has a number of benefits (see below). The main benefit is moving one level higher in the abstraction layer of languages as a domain. Instead of programming specific languages and typing specific syntax, we make a universal language that generates code for all languages one may wish to program in (right now, C++).
+
+This allows for a "knowing without knowing" approach to programming. The syntax -- even the implementation of functions if one wishes -- becomes abstracted. All that is left is the "cleanup" of organizing code (if even that). 
+
+On the implementation, my goal is to make a "library of functions". That is, a function will be fully implemented to do one purpose, regardless of the implementation of classes and data members. For example, traversing a linear list and displaying its members should work whether the information is an int or a char. It remains to be seen whether this is yet possible to do... but this is what I am aiming to do in this project.
+
+GOALS:
+1) Re-create a Karla program using the ACG.
+
+Programming details:
+1) Read in the example1 string, tokenize the input, and then run the different tokens through an if/then/else branch, outputting code to a .txt (like) file with proper indentation.
+2) implement button 
+
+Benefits:
+1. A user can create working code in any language, without needing to know that language.
+2. An optimal algorithm will be chosen each time as the automatic code generation knows what is best in each and every case
+3. Code becomes less confusing, more science and less art, as it is standardized. This allows for readable code.
+4. Code is secure by default -- no programming errors are allowed (e.g., code will always use strncpy). By default, fields/members are private.
+5. Creates a skeleton -- reducing code generation time. Allows that skeleton to be customized if users do not like the way the code is designed.
+6. Holds a benefit over traditional "click and point" button code generation as users may be able to learn a little syntax and generate code, rather than learning a new UI.
+7. Reduces bugs
+8. Allows freedom for users to use the service as much or as little as they want. For example, a user could simply create all classes, members, and fields without checking the "implement" button.
+9. Code is predictable. This takes out the implementation time of coding predictable states.
+10. Even if one disagrees with the efficiency of the ACG, they can change it. This is faster in the long run...

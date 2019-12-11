@@ -1,0 +1,9 @@
+class bike{
+public:
+int bike();
+int ~bike();
+hop();
+pedal();
+stop();
+private:
+int

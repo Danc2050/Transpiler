@@ -1,0 +1,22 @@
+#include "int"
+
+bike::bike()
+{
+}
+
+bike::~bike()
+{
+}
+
+bike::hop()
+{
+}
+
+bike::pedal()
+{
+}
+
+bike::stop()
+{
+}
+

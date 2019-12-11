@@ -1,0 +1,56 @@
+HLOA: Higher Level of Abstraction
+---------------------------------
+
+***Mission Statement***:
+This project is designed to act as an abstraction between the higher level languages such as Python and Java. By creating a new language, HLOA will create micro-code that can be then converted to code in other languages.
+
+
+For example, consider the following (repeatable) statements in different languages:
+
+C++:
+
+for(int i = 0; i < 10; ++i){
+	cout <<i<<endl;
+
+C:
+for(int i = 0; i < 10; ++i){
+	print(i);
+
+Python:
+for i in range(0, 10):
+	print(i);
+
+Java:
+for (int i = 0; i < 10; ++i){
+	System.out.println(i);
+}
+
+My goal would be to simplify the programmers life with one statement:
+
+HLOA: 
+[{Command} {variable} {inclusive/exclusive} {stopping condition} {body}]
+for i until 10 print(i)  # Or some version...
+
+Depending on the desire of the user, they could then translate the above statement into whatever language they would like.
+
+Note that this language paradigm makes programming much more easier for a variety of reasons.
+ - The word until implies exclusivity (as in opposite of inclusive) of 10. The word 'through' could imply inclusivity of 10.
+	- Note that this is easier to grasp what implementations differ. For example, pythons for loop may be exclusive:
+		for i in range (0,10)
+
+***Problems***:
+The implementation will vary. For example, what if a user wanted to do the following in C++:
+
+C++:
+for (int i = 0; i < 10; i += 2){
+	print(i);
+}
+
+The language should account for as much variability amongst the languages as possible to ensure that the programmer will not be sacrificing variability for the code that they write. This may end up pigeonholing the language to only support a few languages (e.g., C++, C, Java, Python rather than Java).
+
+An example of solving the above would may be a slight alteration of the language:
+
+2for i until 10 print(i)  # Or some version...
+
+
+

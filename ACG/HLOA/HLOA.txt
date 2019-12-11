@@ -1,0 +1,50 @@
+HLOA Example Src file1
+
+HLOA 		--->     C++  Conversion
+----------------------------------------
+
+library iostream   ---> #include <iostream>
+library cctype     ---> #include <cctype.h>
+
+
+main --> int main(){ 
+
+
+for i until 10 print(i)  --> for (int i = 0; i < 10; ++i){ cout <<i<<endl;}
+
+while true print(i) 		 --> while(1) { cout << i<<endl;}
+
+if a < 10 print("False") otherwise print("True") --> if(a < 10) 
+							cout <<"False"<<endl;
+						     else:
+						        cout <<"True"<<endl;
+
+function key_verifier returns string takes key(I) 							---> string key_verifier(int key){
+- if key equals mykey print("key is valid") otherwise print("Key is false") return 			---> 	if(strcmp(key, super.myKey) == 0){
+													--->		cout <<"Key is valid"<<endl;
+													--->	else:
+													--->		cout <<"Key is false"<<endl;
+end --> }
+
+
+
+
+
+
+
+// How to sense scope?
+- For example:
+ - variable mykey could be in
+   - Possibly include something like: "my.____" to indicate it is an object of a particular class. Maybe use "myp."
+
+
+
+Notes:
+// The one line is valuable as it can specify logical segments more easily, as we do in English.
+
+/Steven's notes:
+In order to do what you want to do you should:
+1) lex -- (lexicalize your words...then tokenize your input)
+2) parse -- Create an Abstract Syntax Tree for all the language constructs you are going to "compile" your language to (Java, Python, C, C++).
+		--E.g., "function" in a .cpp file should generate c++ code for a function
+	You ned a context free grammer to walk the tree
